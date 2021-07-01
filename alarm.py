@@ -3,7 +3,7 @@ I='covid'
 import os,datetime as E,time
 from covidon import covid_return as F
 G=['10:00','11:00','12:00','13:32','14:32']
-B=['18:30','Aarti','18:00',I,'20:30','Dish wash']
+B=['18:30','Aarti','18:24',I,'20:30','Dish wash']
 while True:
 	H=E.datetime.now();C=H.strftime('%H:%M')
 	for A in G:
