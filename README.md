@@ -6,8 +6,7 @@ A project I wish to maintain, Works only on ubuntu based system.
 * ubuntu play
 * notify-send
 * Python 8.0+
-> Tested only on [Pop! os](https://pop.system76.com/ "Pop! Os Official Website") 21.04, Should work on versions closer to it. 
->> Tested only on Gnome DE
+> Tested on [Pop! os](https://pop.system76.com/ "Pop! Os Official Website") 21.04, MacOS Big sur, [Fedora](https://getfedora.org/) 34 Should work on versions closer to it. 
 
 # Main file
 
