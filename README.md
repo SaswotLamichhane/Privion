@@ -1,3 +1,4 @@
+
 # Privion
 
 A project I wish to maintain, Works only on ubuntu based system. 
@@ -17,3 +18,7 @@ It works by running the main code evey second. While it runs, It receives the cu
 If the current time matches one of the times in the _G_ or _B_ list, It triggers the alarm. Once the alarm is triggered a notificaition is sent and music is played. 
 
 > Other simple functionalities can be easily understood my checking the code. The code is compressed to decrease memory usage. But earlier versions of it contains the un-compressed code which is more read-able.
+
+The image of avatar if needed:
+
+![avatar](https://user-images.githubusercontent.com/58847742/124600368-5c45e300-de86-11eb-80c0-434cc96baf4f.jpg)
