@@ -1,7 +1,7 @@
 
 # Privion
 
-A project I wish to maintain, Works only on ubuntu based system. 
+A project I wish to maintain, Works only on unix based system. 
 
 # Required packages
 * Unix play
