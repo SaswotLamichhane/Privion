@@ -17,7 +17,7 @@ The main file which should be run is [alarm.py](https://github.com/SaswotLamichh
 It works by running the main code evey second. While it runs, It receives the current time of the user, It then checks through the list of alarms marked by _G_ and _B_ through `for` loop.
 If the current time matches one of the times in the _G_ or _B_ list, It triggers the alarm. Once the alarm is triggered a notificaition is sent and music is played. 
 
-> Other simple functionalities can be easily understood my checking the code. The code is compressed to decrease memory usage. But earlier versions of it contains the un-compressed code which is more read-able.
+> Other simple functionalities can be easily understood by checking the code. The code is compressed to decrease memory usage. But earlier versions of it contains the un-compressed code which is more read-able.
 
 The image of avatar if needed:
 
