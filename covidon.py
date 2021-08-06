@@ -31,4 +31,3 @@ def covid_return():
             covid_return()
         else:
             pass
-covid_return()
