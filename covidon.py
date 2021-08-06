@@ -21,14 +21,14 @@ def covid_return():
         c_text = c_text.replace("</strong>", '')
         d_text = death.replace('<strong>', '')
         d_text = d_text.replace("</strong>", '')
-        os.system(f'notify-send -i /home/shaswot/Pictures/avatar.jpg --urgency=critical "{c_text}" "{d_text}"')
-        os.system('play co.wav')
+        os.system(f'notify-send -i /home/Shaswot/Documents/Privion/avatar.jpg --urgency=critical "{c_text}" "{d_text}"')
+        os.system('play /home/Shaswot/Documents/Privion/co.mp3')
     except:
         i += 1
-        os.system(f'notify-send -i /home/shaswot/Pictures/avatar.jpg --urgency=critical "No Internet Connection" "I will try in 5 minutes for 5 times"')
-        time.sleep(300000)
-        print(i)
+        os.system(f'notify-send -i /home/Shaswot/Documents/Privion/avatar.jpg --urgency=critical "No Internet Connection" "I will try in 5 minutes for 5 times"')
+        time.sleep(300)
         if i < 5:
             covid_return()
         else:
             pass
+covid_return()
