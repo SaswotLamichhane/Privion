@@ -4,8 +4,8 @@
 A project I wish to maintain, Works only on unix based system. 
 
 # Required packages
-* Unix play
-* notify-send
+* Unix play (sox)
+* notify-send (libnotify-bin>=0.7.5)
 * Python 8.0+
 > Tested on [Pop! os](https://pop.system76.com/ "Pop! Os Official Website") 21.04, MacOS Big sur, [Fedora](https://getfedora.org/) 34 (Should work on versions closer to it). 
 
