@@ -1,28 +1,18 @@
-import requests
-from bs4 import BeautifulSoup
-import datetime
-import os
-import time
+import requests, json, time, os
 i = 0
 def covid_return():
     global i
     try:
-        current = datetime.datetime.now()
-        day = current.strftime("%m-%d")
-        URL = 'https://www.worldometers.info/coronavirus/country/nepal'
-        page = requests.get(URL)  
-        soup = BeautifulSoup(page.content, 'lxml')
-        result = soup.find('div', id=f"newsdate2021-{day}")
-        sou = result.find('li', class_='news_li')
-        p = sou.find_all('strong')
-        cases = f"{p[0]}"
-        death = f"{p[1]}"
-        c_text = cases.replace('<strong>', '')
-        c_text = c_text.replace("</strong>", '')
-        d_text = death.replace('<strong>', '')
-        d_text = d_text.replace("</strong>", '')
-        os.system(f'notify-send -i "/media/shal/Hard disk/apps/Privion-master/co.mp3" --urgency=critical "{c_text}" "{d_text}"')
-        os.system('play ./co.mp3')
+      URL = 'https://covid19.mohp.gov.np/covid/api/confirmedcases'
+      text = requests.get(URL).text
+      data = json.loads(text)['nepal']
+      new = data['today_newcase']
+      date = data['date']
+      recovered = data['today_recovered']
+      deaths = data['today_death']
+      t = str(new)+" cases \n"+str(recovered)+" recovered \n"+ str(deaths)+" deaths "
+      os.system(f'notify-send -i "/media/shal/Hard disk/apps/Privion-master/co.mp3" --urgency=critical "{date}" "{t}"')
+      os.system('play ./co.mp3')
     except:
         i += 1
         os.system(f'notify-send -i "/media/shal/Hard disk/apps/Privion-master/avatar.jpg" --urgency=critical "No Internet Connection" "I will try in 5 minutes for 5 times"')
