@@ -10,12 +10,18 @@ def covid_return():
       date = data['date']
       recovered = data['today_recovered']
       deaths = data['today_death']
-      t = str(new)+" cases \n"+str(recovered)+" recovered \n"+ str(deaths)+" deaths "
-      os.system(f'notify-send -i "/media/shal/Hard disk/apps/Privion-master/co.mp3" --urgency=critical "{date}" "{t}"')
+      t_cases = int(new) - int(recovered)
+      b = '🔵️'
+      a = '📈!'
+      if t_cases < 0:
+          b = '🔴️ '
+          a = '🔻'
+      t = b+str(new)+" cases \n"+b+str(recovered)+" recovered \n"+b+ str(deaths)+" deaths \n" +b+str(t_cases)+" total"
+      os.system(f'notify-send -i "/home/shal/Documents/code/Privion/c.png" --urgency=critical "{b+date+"    "+a}" "{t}"')
       os.system('play ./co.mp3')
     except:
         i += 1
-        os.system(f'notify-send -i "/media/shal/Hard disk/apps/Privion-master/avatar.jpg" --urgency=critical "No Internet Connection" "I will try in 5 minutes for 5 times"')
+        os.system(f'notify-send -i "/home/shal/Documents/code/Privion/avatar.jpg" --urgency=critical "No Internet Connection" "I will try in 5 minutes for 5 times"')
         time.sleep(300)
         if i < 5:
             covid_return()
