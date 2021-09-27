@@ -21,4 +21,4 @@ If the current time matches one of the times in the _G_ or _B_ list, It triggers
 
 The image of avatar if needed:
 
-![avatar](https://user-images.githubusercontent.com/58847742/124600368-5c45e300-de86-11eb-80c0-434cc96baf4f.jpg)
+![avatar](https://user-images.githubusercontent.com/58847742/134895596-f1b5649f-a0ab-4604-bbc5-1a5ea9ca06ae.png)
